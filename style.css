@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("image/home bg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: fit-content;
+
+}
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-weight: 1500;
+}
+
+h3 {
+    color: white;
+}
+
+h5 {
+    color: rgb(140, 140, 146);
+}
+
+p {
+    color: rgb(214, 186, 187);
+}
+
+
+nav {
+    background-image: url("image/web bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+nav .navbar-collapse .navbar-nav {
+    margin-left: 200px;
+}
+
+nav .navbar-collapse .navbar-nav li {
+    margin-left: 20px;
+    transition: 1s;
+}
+
+
+/* intro */
+.section1 {
+    background: none;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+.section1 .text-column h1 {
+    padding-top: 200px;
+}
+
+.section1 .image-column img {
+    width: 500px;
+    margin-top: 150px;
+}
+
+.about-section {
+    background: none;
+    width: 100%;
+    height: fit-content;
+}
+
+
+
+/* about section */
+.about-section .about-image img {
+    width: 500px;
+}
+
+.about-section .about-text h3 {
+    margin-top: 100px;
+}
+
+.about-section .about-text h5 {
+    margin-top: 10px;
+}
+
+.about-section .about-text p {
+    margin-top: 10px;
+}
+
+
+
+/* features section */
+.features-sction {
+    background-image: url("image/web bg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.features-sction .features .feature-col img {
+    width: 50px;
+}
+
+
+
+/* Newsletter */
+.newsletter-section {
+    width: 100%;
+    height: fit-content;
+}
+
+.newsletter-section form {
+    padding: 70px;
+
+}
+
+.newsletter-section form input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid rgb(216, 87, 87);
+    outline: none;
+    color: rgb(216, 87, 87);
+    box-shadow: none !important;
+    transition: 0.5s;
+}
+
+.newsletter-section form input:focus {
+    border-bottom: 2px solid rgb(102, 124, 221);
+    outline: white;
+    width: 350px;
+}
+
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: fit-content;
+}
+
+footer h1 {
+    padding-top: 50px;
+}
+
+footer .contact .col-text {
+    margin-top: 20px;
+}
+
+footer .contact .social a img {
+    filter: invert(1) sepia(1) saturate(3) hue-rotate(275deg);
+    width: 25px;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+
+
+/* responsive */
+
+/* medium screen */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    nav .navbar-collapse .navbar-nav {
+        margin-left: 0;
+    }
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+    nav .navbar-collapse .navbar-nav {
+        margin-left: 0;
+    }
+
+    nav .navbar-collapse .navbar-nav li {
+        margin-left: 0;
+    }
+
+}
+
+/* large mobile screen*/
+@media only screen and (max-width: 767px) {
+    nav .navbar-collapse .navbar-nav {
+        margin-left: 0;
+    }
+
+    nav .navbar-collapse .navbar-nav li {
+        margin-left: 0;
+    }
+
+    footer .contact .social a img {
+        margin-left: 70px;
+    }
+}
+
+/* small mobile screen */
+@media only screen and (max-width: 400px) and (max-height: 667px) {
+    .newsletter-section form input:focus {
+        border-bottom: 2px solid rgb(102, 124, 221);
+        outline: white;
+        width: 250px;
+    }
+
+    footer .contact .social a img {
+        margin-left: 57px;
+    }
+}
+
+@media only screen and (max-width: 667px) and (max-height: 400px) {
+    footer .contact .social a img {
+        margin-left: 130px;
+    }
+}
